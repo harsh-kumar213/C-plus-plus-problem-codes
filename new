@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+   float x=54.3;
+   float & y=x;
+   cout<<x<<endl<<y; 
+    
+    
+    
+    
+    
+    return 0;
+
+}
+
+

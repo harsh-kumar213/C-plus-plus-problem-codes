@@ -1,0 +1,20 @@
+# include<iostream>
+using namespace std;
+
+int main(){
+    
+    int a = 14
+    int b = 15
+
+    cout<<"the value of a"<<a<<. "the value of b is"<<b;
+    
+    
+    
+    
+    
+    
+    
+    return 0;
+
+
+}
