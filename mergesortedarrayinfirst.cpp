@@ -9,7 +9,7 @@ int main(){
     cin>>m;
     int arr1[10];
     int arr2[10];
-    int arr3[20];
+    
     cout<<"enter elements of first array"<<endl;
     for(int i = 0; i<n; i++)
     {
@@ -21,4 +21,23 @@ int main(){
         cin>>arr2[i];
     }
 
-     
+   
+    int j = 0;
+    while(j<m){
+       int i = n + j-1;
+       while((i>=0) && (arr2[j]<arr1[i]))
+       {
+          arr1[i+1] = arr1[i];
+          i--;
+       } 
+       arr1[i+1] = arr2[j];
+       j++;
+    }
+    
+      for(int a = 0; a<n+m; a++)
+      {
+        cout<<arr1[a]<<" ";
+      }
+
+    return 0;
+}
